@@ -9,8 +9,4 @@ class SessionsController < ApplicationController
     log_out(JSON.parse(request.body.read))
   end
 
-  def session_params
-    params.require(:session).permit(:auth_key, :user_id)
-  end
-
 end
