@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   delete 'users' => 'users#destroy'
   post 'sessions' => 'sessions#create'
   delete 'sessions' => 'sessions#destroy'
+  post 'events' => 'events#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
