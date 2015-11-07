@@ -9,7 +9,7 @@ class EventsController < ApplicationController
     if event.save
       render json: event
     else
-      render json: {"messages": "FUCKKKKKKKKK"}
+      render json: {"messages" => "FUCKKKKKKKKK"}
     end
   end
 end
