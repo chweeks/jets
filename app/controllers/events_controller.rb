@@ -12,4 +12,8 @@ class EventsController < ApplicationController
       render json: {"messages" => "FUCKKKKKKKKK"}
     end
   end
+
+  def show
+    render json: Event.all
+  end
 end
